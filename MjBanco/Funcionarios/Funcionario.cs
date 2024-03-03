@@ -26,9 +26,10 @@ namespace MjBanco.Funcionarios
         public string CPF { get; private set; }
         public decimal Salario { get; protected set; }
 
+
         //Modificadores virtual e override: Alguns comportamentos possuem implementações diferentes nas classes derivadas,
         //para resolver este problema basta usarmos métodos virtuais e a sobrescrita.
-        
+
         //metodo abstrato que obriga o dev a criar na classe filha a criar este metodo com o tipo override.
         public abstract decimal GetBonificacao();
 

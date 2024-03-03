@@ -4,12 +4,13 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using MjBanco.Interfaces;
 
 namespace MjBanco.Funcionarios
 {
     //Herança: Aprendemos herança e vimos que, com sua sintaxe bastante simples, ela é importantíssima em qualquer projeto.
-    //A classe diretor é derivada da classe abstrata autenticavel e a classe autenticavel é derivada da classe abstrata funcionario.
-    public class Diretor : Autenticavel 
+    //A classe diretor é derivada da classe abstrata FuncionarioAutenticavel.
+    public class Diretor : FuncionarioAutenticavel
     {
         //Construtor herdando as caracteriscas da classe base. somente nome e CPF como obrigatorio na classe diretor,
         //pq na classe base é somente nome e cpf como obrigatorio, porem estamos instanciando o salario e cargo na classe filha
